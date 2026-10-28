@@ -48,12 +48,25 @@ Whether you are in a living room with no internet connection, in a hotel room wi
 
 ## Visual Presentation
 
+### Android TV 10-Foot Experience
+
 <div align="center">
 
 | Android TV Leanback Dashboard | Android TV Transfer Dashboard |
 | :---: | :---: |
 | <img src="docs/screenshots/tv-home.png" width="460" alt="Android TV Interface"/> | <img src="docs/screenshots/tv-transfer.png" width="460" alt="Android TV Transfer Screen"/> |
 | *10-foot Leanback TV dashboard with "Send Files from TV" focused for frictionless TV-to-Phone transfers and QR/PIN pairing* | *Live transfer completion monitoring on Android TV with 100% verified delivery* |
+
+</div>
+
+### Android Phone Experience
+
+<div align="center">
+
+| Home & Discovery | Live Streaming Metering | Batch Completed | Router-Free Setup | Settings & Destination |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="docs/screenshots/phone-home.png" width="185" alt="Phone Home Screen"/> | <img src="docs/screenshots/phone-transfer-progress.png" width="185" alt="Live Transfer Metering"/> | <img src="docs/screenshots/phone-transfer-complete.png" width="185" alt="Transfer Completed Screen"/> | <img src="docs/screenshots/phone-hotspot-dialog.png" width="185" alt="Router-Free Hotspot Guide"/> | <img src="docs/screenshots/phone-settings.png" width="185" alt="Settings & Save Destination"/> |
+| *Send/Receive, TV pairing chips & peer list* | *Live throughput metering (MB/s) & ETA* | *Verified transfer complete with success toast* | *Step-by-step ad-hoc hotspot guide* | *Target directory selection & auto-accept* |
 
 </div>
 
