@@ -29,7 +29,10 @@ Whether you are in a living room with no internet connection, in a hotel room wi
 
 ## Key Features
 
-- **Bidirectional Transfers:** Seamlessly send files from **Phone to TV**, **TV to Phone**, and **Phone to Phone**.
+- **True Bidirectional Sharing (TV-to-Phone & Phone-to-TV):**
+  - **TV-to-Phone Transfer:** Extract videos, recorded streams, application backups, or files stored on TV-connected USB drives directly back to your smartphone—controlled entirely with a standard D-pad TV remote without requiring a camera on the TV.
+  - **Phone-to-TV Transfer:** Instantly beam large movies, TV show episodes, photos, and app APKs from your phone to the big screen without cloud lag or upload limits.
+  - **Phone-to-Phone Transfer:** Fast peer-to-peer sharing between Android smartphones and tablets.
 - **Camera-Free TV Pairing:** Android TVs rarely have cameras. Razdrop displays a high-contrast QR code and a **4-digit pairing PIN** on the TV screen; the phone scans the QR code or enters the PIN to authenticate instantly.
 - **3-Tier Offline Networking:**
   - **Wi-Fi Direct (`WifiP2pManager`):** Negotiates a direct peer-to-peer wireless link without an external router or access point.
@@ -47,12 +50,27 @@ Whether you are in a living room with no internet connection, in a hotel room wi
 
 <div align="center">
 
-| Android TV Leanback Dashboard | Mobile Transfer Queue |
+| Android TV Leanback Dashboard | Android TV Transfer Dashboard |
 | :---: | :---: |
-| <img src="docs/screenshots/banner.svg" width="380" alt="Android TV Interface"/> | <img src="docs/screenshots/logo.svg" width="180" alt="Razdrop Logo"/> |
-| *10-foot Leanback TV interface with 4-digit PIN pairing* | *Streamlined phone UI with live MB/s throughput* |
+| <img src="docs/screenshots/tv-home.png" width="460" alt="Android TV Interface"/> | <img src="docs/screenshots/tv-transfer.png" width="460" alt="Android TV Transfer Screen"/> |
+| *10-foot Leanback TV dashboard with "Send Files from TV" focused for frictionless TV-to-Phone transfers and QR/PIN pairing* | *Live transfer completion monitoring on Android TV with 100% verified delivery* |
 
 </div>
+
+---
+
+## How It Works
+
+### TV-to-Phone Transfers (Camera-Free)
+1. On your Android TV, navigate with your remote control to **Send Files from TV**.
+2. Select any media files, documents, or APKs from internal storage or connected **USB flash drives**.
+3. On your phone, tap **Receive** or scan the TV's pairing code to establish the direct connection.
+4. Files stream directly from your TV to your phone over the high-speed local link.
+
+### Phone-to-TV Transfers
+1. Open Razdrop on your TV to view the instant connection QR code and 4-digit PIN.
+2. On your phone, tap **Send**, choose your files, and point your camera at the TV's QR code (or enter the PIN).
+3. Transfers begin immediately with real-time throughput metering. Files are automatically organized and indexed into your chosen TV destination folder or USB drive.
 
 > [!NOTE]
 > Additional high-resolution device captures will be archived in the [`docs/screenshots/`](docs/screenshots/) folder.

@@ -8,11 +8,8 @@ This directory contains visual assets and screenshots representing the Razdrop a
 | ----- | ----------- | --------------- |
 | `logo.svg` | Vector brand logo (Cyber Midnight Navy + Electric Cyan monogram) | Rendered from `ic_razdrop_logo.xml` |
 | `banner.svg` | Leanback TV banner asset (`320x180 dp`) | Rendered from `tv_banner.xml` |
-| `phone-home.png` | Phone home dashboard (Peer discovery & send/receive controls) | Real device capture |
-| `tv-home.png` | Android TV 10-foot Leanback interface (PIN & QR pairing) | Real TV capture |
-| `pairing-screen.png` | Phone QR code scanner & PIN dialog | Real device capture |
-| `transfer-progress.png` | High-throughput streaming dashboard (MB/s metering) | Real device capture |
-| `transfer-success.png` | Completed transfer batch screen | Real device capture |
+| `tv-home.png` | Android TV 10-foot Leanback interface (QR, PIN & Send Files from TV) | Genuine Android TV capture (1080p) |
+| `tv-transfer.png` | Android TV transfer completion dashboard | Genuine Android TV capture (1080p) |
 
 ## Capture Guidelines
 

@@ -57,6 +57,7 @@ public class TvMainActivity extends Activity implements TransferCallback {
     private TransferService transferService;
     private boolean isBound = false;
     private PeerDevice lastConnectedPeer;
+    private android.content.BroadcastReceiver screenshotReceiver;
 
     private final ServiceConnection serviceConn = new ServiceConnection() {
         @Override
@@ -84,6 +85,7 @@ public class TvMainActivity extends Activity implements TransferCallback {
         checkAndRequestPermissions();
         setupTvIdentity();
         startTvReceiverService();
+        screenshotReceiver = com.razdrop.app.util.ScreenshotHelper.registerScreenshotReceiver(this);
     }
 
     private void checkAndRequestPermissions() {
@@ -382,8 +384,22 @@ public class TvMainActivity extends Activity implements TransferCallback {
     }
 
     @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (com.razdrop.app.util.ScreenshotHelper.handleKeyEvent(this, event)) {
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (screenshotReceiver != null) {
+            try {
+                unregisterReceiver(screenshotReceiver);
+            } catch (Exception ignored) {}
+            screenshotReceiver = null;
+        }
         if (isBound && transferService != null) {
             transferService.removeListener(this);
             unbindService(serviceConn);

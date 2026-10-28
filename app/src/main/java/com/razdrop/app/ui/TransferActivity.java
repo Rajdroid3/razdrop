@@ -42,6 +42,7 @@ public class TransferActivity extends Activity implements TransferCallback {
     private TransferService transferService;
     private boolean isBound = false;
     private boolean isTransferFinished = false;
+    private android.content.BroadcastReceiver screenshotReceiver;
 
     private final ServiceConnection serviceConn = new ServiceConnection() {
         @Override
@@ -71,6 +72,7 @@ public class TransferActivity extends Activity implements TransferCallback {
 
         initViews();
         bindService(new Intent(this, TransferService.class), serviceConn, Context.BIND_AUTO_CREATE);
+        screenshotReceiver = com.razdrop.app.util.ScreenshotHelper.registerScreenshotReceiver(this);
     }
 
     private void initViews() {
@@ -202,8 +204,22 @@ public class TransferActivity extends Activity implements TransferCallback {
     }
 
     @Override
+    public boolean dispatchKeyEvent(android.view.KeyEvent event) {
+        if (com.razdrop.app.util.ScreenshotHelper.handleKeyEvent(this, event)) {
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (screenshotReceiver != null) {
+            try {
+                unregisterReceiver(screenshotReceiver);
+            } catch (Exception ignored) {}
+            screenshotReceiver = null;
+        }
         if (isBound && transferService != null) {
             transferService.removeListener(this);
             unbindService(serviceConn);

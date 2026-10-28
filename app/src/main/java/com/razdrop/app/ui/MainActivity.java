@@ -66,6 +66,7 @@ public class MainActivity extends Activity implements ConnectionCoordinator.Coor
     private String localPin;
     private TransferService transferService;
     private boolean isBound = false;
+    private android.content.BroadcastReceiver screenshotReceiver;
 
     private final ServiceConnection serviceConn = new ServiceConnection() {
         @Override
@@ -100,6 +101,7 @@ public class MainActivity extends Activity implements ConnectionCoordinator.Coor
         initViews();
         checkAndRequestPermissions();
         setupCoordinator();
+        screenshotReceiver = com.razdrop.app.util.ScreenshotHelper.registerScreenshotReceiver(this);
     }
 
     @Override
@@ -555,8 +557,22 @@ public class MainActivity extends Activity implements ConnectionCoordinator.Coor
     public void onCancelled() {}
 
     @Override
+    public boolean dispatchKeyEvent(android.view.KeyEvent event) {
+        if (com.razdrop.app.util.ScreenshotHelper.handleKeyEvent(this, event)) {
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (screenshotReceiver != null) {
+            try {
+                unregisterReceiver(screenshotReceiver);
+            } catch (Exception ignored) {}
+            screenshotReceiver = null;
+        }
         if (isBound && transferService != null) {
             transferService.removeListener(this);
             unbindService(serviceConn);
