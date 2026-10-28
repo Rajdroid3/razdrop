@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Primary Colors -->
+    <color name="raz_primary">#00F2FE</color>
+    <color name="raz_primary_variant">#00C3FF</color>
+    <color name="raz_secondary">#3B82F6</color>
+    <color name="raz_gradient_start">#00F2FE</color>
+    <color name="raz_gradient_end">#4FACFE</color>
+
+    <!-- Dark Theme / Cyber Navy Palette -->
+    <color name="raz_background">#0A0F1D</color>
+    <color name="raz_surface">#12192C</color>
+    <color name="raz_surface_elevated">#18233C</color>
+    <color name="raz_surface_card">#151F35</color>
+    <color name="raz_stroke">#223254</color>
+    <color name="raz_stroke_focused">#00F2FE</color>
+
+    <!-- Text Colors -->
+    <color name="raz_text_primary">#FFFFFF</color>
+    <color name="raz_text_secondary">#94A3B8</color>
+    <color name="raz_text_tertiary">#64748B</color>
+    <color name="raz_text_inverse">#0A0F1D</color>
+
+    <!-- Semantic / Status Colors -->
+    <color name="raz_success">#10B981</color>
+    <color name="raz_success_bg">#1A10B981</color>
+    <color name="raz_warning">#F59E0B</color>
+    <color name="raz_warning_bg">#1AF59E0B</color>
+    <color name="raz_error">#EF4444</color>
+    <color name="raz_error_bg">#1AEF4444</color>
+    <color name="raz_info">#38BDF8</color>
+
+    <!-- TV D-pad Focus Colors -->
+    <color name="raz_tv_focus_ring">#00F2FE</color>
+    <color name="raz_tv_focus_fill">#2000F2FE</color>
+    <color name="raz_ripple">#3000F2FE</color>
+</resources>

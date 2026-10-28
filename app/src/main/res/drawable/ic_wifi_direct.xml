@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Wi-Fi Direct: Two devices directly linked with wireless waves -->
+    <path
+        android:fillColor="#00F2FE"
+        android:pathData="M 6.5,7 C 7.3,7 8,6.3 8,5.5 C 8,4.7 7.3,4 6.5,4 C 5.7,4 5,4.7 5,5.5 C 5,6.3 5.7,7 6.5,7 Z M 17.5,20 C 18.3,20 19,19.3 19,18.5 C 19,17.7 18.3,17 17.5,17 C 16.7,17 16,17.7 16,18.5 C 16,19.3 16.7,20 17.5,20 Z M 7.5,9 C 6,9 4,10 4,12 V 14 H 11 V 12 C 11,10 9,9 7.5,9 Z M 18.5,15 C 17,15 15,16 15,18 V 20 H 22 V 18 C 22,16 20,15 18.5,15 Z" />
+    <path
+        android:strokeColor="#00F2FE"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 12,6 L 16,10 M 12,18 L 8,14" />
+</vector>

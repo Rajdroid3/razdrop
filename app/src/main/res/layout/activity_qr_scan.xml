@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Camera Surface Preview -->
+    <SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Dark Semi-transparent Viewfinder Mask -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Top Header Bar -->
+        <LinearLayout
+            android:id="@+id/scan_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="#990A0F1D"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_scan_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_button_secondary"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="Scan TV QR Code"
+                android:textColor="@color/raz_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_scan_torch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_button_secondary"
+                android:src="@drawable/ic_flashlight" />
+        </LinearLayout>
+
+        <!-- Viewfinder Box (Center 260dp x 260dp) -->
+        <FrameLayout
+            android:id="@+id/viewfinder_box"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_viewfinder_frame">
+
+            <!-- Laser Scanning Line -->
+            <View
+                android:id="@+id/view_laser"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/ic_laser_line" />
+        </FrameLayout>
+
+        <!-- Bottom Guidance Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#B30A0F1D"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Align the QR code on your TV screen within the frame"
+                android:textColor="@color/raz_text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Direct link will establish automatically without internet"
+                android:textColor="@color/raz_primary"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

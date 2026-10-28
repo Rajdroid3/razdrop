@@ -1,0 +1,40 @@
+# Built-in & Generated Gradle Directories
+.gradle/
+build/
+app/build/
+**/build/
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Local Machine Configurations
+local.properties
+.DS_Store
+Thumbs.db
+
+# Signing Credentials & Keystores
+*.jks
+*.keystore
+*.key
+*.p12
+
+# Build Outputs & Binary Artifacts
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# Profiling & Diagnostics
+captures/
+*.hprof
+*.log
+
+# OS & Temp Files
+*.tmp
+*~

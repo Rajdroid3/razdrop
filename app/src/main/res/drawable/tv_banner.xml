@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+
+    <!-- Deep Navy Background -->
+    <path
+        android:fillColor="#0A0F1D"
+        android:pathData="M 0,0 H 320 V 180 H 0 Z" />
+
+    <!-- Sleek Diagonal Cyber Glow Stripe -->
+    <path
+        android:fillColor="#152138"
+        android:pathData="M 0,180 L 180,0 L 220,0 L 40,180 Z" />
+
+    <!-- Cyan Accent Line -->
+    <path
+        android:fillColor="#00F2FE"
+        android:pathData="M 0,176 H 320 V 180 H 0 Z" />
+
+    <!-- Centered Logo Left Group -->
+    <group
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:translateX="15"
+        android:translateY="20">
+
+        <!-- Outer Wave -->
+        <path
+            android:strokeColor="#3300F2FE"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M 96,38 A 42,42 0 0,1 96,90" />
+        <path
+            android:strokeColor="#3300F2FE"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M 32,38 A 42,42 0 0,0 32,90" />
+
+        <!-- Logo R Stem -->
+        <path
+            android:fillColor="#00F2FE"
+            android:pathData="M 46,30 L 56,30 L 56,98 L 46,98 Z" />
+
+        <!-- Logo R Loop -->
+        <path
+            android:fillColor="#00C3FF"
+            android:pathData="M 56,30 L 76,30 C 85,30 92,37 92,46 C 92,55 85,62 76,62 L 56,62 Z M 56,40 L 56,52 L 74,52 C 77.5,52 80.5,49 80.5,46 C 80.5,43 77.5,40 74,40 Z" />
+
+        <!-- Logo Lightning Arrow Leg -->
+        <path
+            android:fillColor="#4FACFE"
+            android:pathData="M 66,58 L 78,58 L 92,80 L 80,80 L 88,98 L 64,74 L 76,74 Z" />
+    </group>
+
+    <!-- Modern Stylized Text Elements: R A Z D R O P -->
+    <!-- Letter R -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 130,68 H 144 C 151,68 155,72 155,78 C 155,84 151,88 144,88 H 137 V 104 H 130 Z M 137,74 V 82 H 143 C 146,82 148,80 148,78 C 148,76 146,74 143,74 Z" />
+    <path
+        android:fillColor="#00F2FE"
+        android:pathData="M 142,88 L 154,104 H 146 L 136,88 Z" />
+
+    <!-- Letter A -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 163,68 H 171 L 180,104 H 173 L 171,96 H 163 L 161,104 H 154 Z M 165,89 H 169 L 167,78 Z" />
+
+    <!-- Letter Z -->
+    <path
+        android:fillColor="#00F2FE"
+        android:pathData="M 185,68 H 201 V 74 L 191,98 H 201 V 104 H 185 V 98 L 195,74 H 185 Z" />
+
+    <!-- Letter D -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 210,68 H 222 C 230,68 235,74 235,86 C 235,98 230,104 222,104 H 210 Z M 217,74 V 98 H 222 C 227,98 228,93 228,86 C 228,79 227,74 222,74 Z" />
+
+    <!-- Letter R -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 242,68 H 255 C 261,68 265,72 265,78 C 265,84 261,88 255,88 H 249 V 104 H 242 Z M 249,74 V 82 H 254 C 257,82 258,80 258,78 C 258,76 257,74 254,74 Z" />
+    <path
+        android:fillColor="#00F2FE"
+        android:pathData="M 253,88 L 264,104 H 257 L 248,88 Z" />
+
+    <!-- Letter O -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 276,68 C 285,68 291,75 291,86 C 291,97 285,104 276,104 C 267,104 261,97 261,86 C 261,75 267,68 276,68 Z M 276,74 C 271,74 268,79 268,86 C 268,93 271,98 276,98 C 281,98 284,93 284,86 C 284,79 281,74 276,74 Z" />
+
+    <!-- Letter P -->
+    <path
+        android:fillColor="#00F2FE"
+        android:pathData="M 297,68 H 309 C 316,68 319,73 319,80 C 319,87 316,92 309,92 H 304 V 104 H 297 Z M 304,74 V 86 H 308 C 311,86 312,84 312,80 C 312,76 311,74 308,74 Z" />
+
+    <!-- Subtle Tagline Indicator Bar -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M 130,118 H 280 V 120 H 130 Z" />
+</vector>

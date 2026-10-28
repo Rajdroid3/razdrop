@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App & Brand Identity -->
+    <string name="app_name">RazDrop</string>
+    <string name="tagline">Fast transfers. No internet. Just connect.</string>
+    <string name="device_default_name">RazDrop Device</string>
+
+    <!-- Main Navigation & Actions -->
+    <string name="action_send">Send Files</string>
+    <string name="action_receive">Receive</string>
+    <string name="action_history">History</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_done">Done</string>
+    <string name="action_open_file">Open</string>
+    <string name="action_open_folder">Open Folder</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_select_files">Select Files</string>
+    <string name="action_pair_pin">Enter TV PIN</string>
+
+    <!-- Connection Modes & Badges -->
+    <string name="mode_p2p">Wi-Fi Direct</string>
+    <string name="mode_hotspot">Local Hotspot</string>
+    <string name="mode_lan">Local Wi-Fi</string>
+    <string name="mode_discovering">Scanning nearby devices…</string>
+    <string name="mode_waiting">Ready to receive</string>
+
+    <!-- Status & Info -->
+    <string name="tv_banner_text">RazDrop for Android TV</string>
+    <string name="tv_instructions">Open RazDrop on your phone to send or receive files directly to this TV.</string>
+    <string name="tv_pin_label">TV Quick PIN</string>
+    <string name="tv_ip_label">TV IP Address</string>
+    <string name="hotspot_ssid_label">Network (SSID)</string>
+    <string name="hotspot_pass_label">Password</string>
+
+    <!-- Transfer States -->
+    <string name="transfer_state_idle">Idle</string>
+    <string name="transfer_state_connecting">Establishing direct link…</string>
+    <string name="transfer_state_handshake">Exchanging device info…</string>
+    <string name="transfer_state_transferring">Transferring files…</string>
+    <string name="transfer_state_completed">Transfer Completed!</string>
+    <string name="transfer_state_cancelled">Transfer Cancelled</string>
+    <string name="transfer_state_failed">Transfer Failed</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_name">File Transfers</string>
+    <string name="notification_channel_desc">Shows ongoing file transfer progress and speed</string>
+    <string name="notification_transferring">RazDrop Transferring</string>
+
+    <!-- Categories for File Picker -->
+    <string name="cat_images">Images</string>
+    <string name="cat_videos">Videos</string>
+    <string name="cat_audio">Audio</string>
+    <string name="cat_docs">Documents</string>
+    <string name="cat_apps">Apps / APKs</string>
+    <string name="cat_archives">Archives</string>
+    <string name="cat_all">All Files</string>
+
+    <!-- Empty States -->
+    <string name="no_peers_found">No nearby devices detected yet.\nEnsure RazDrop is open on the target device.</string>
+    <string name="no_files_selected">No files selected</string>
+    <string name="no_history">No transfer history yet</string>
+
+    <!-- Settings -->
+    <string name="pref_device_name">Device Name</string>
+    <string name="pref_save_location">Save Destination</string>
+    <string name="pref_auto_accept">Auto-Accept Incoming</string>
+    <string name="pref_auto_accept_desc">Automatically start receiving without prompting</string>
+    <string name="pref_priority">Connection Priority</string>
+</resources>

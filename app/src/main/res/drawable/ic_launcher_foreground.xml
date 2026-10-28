@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.65"
+        android:scaleY="0.65"
+        android:translateX="18.9"
+        android:translateY="18.9">
+        <!-- Outer Signal Arc Right -->
+        <path
+            android:strokeColor="#4000F2FE"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:pathData="M 96,38 A 42,42 0 0,1 96,90" />
+
+        <!-- Outer Signal Arc Left -->
+        <path
+            android:strokeColor="#4000F2FE"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:pathData="M 32,38 A 42,42 0 0,0 32,90" />
+
+        <!-- Stylized Geometric "R" Spine -->
+        <path
+            android:fillColor="#00F2FE"
+            android:pathData="M 46,30 L 56,30 L 56,98 L 46,98 Z" />
+
+        <!-- Stylized "R" Top Loop -->
+        <path
+            android:fillColor="#00C3FF"
+            android:pathData="M 56,30 L 76,30 C 85,30 92,37 92,46 C 92,55 85,62 76,62 L 56,62 Z M 56,40 L 56,52 L 74,52 C 77.5,52 80.5,49 80.5,46 C 80.5,43 77.5,40 74,40 Z" />
+
+        <!-- Stylized Downward Transfer Arrow / Lightning Leg -->
+        <path
+            android:fillColor="#4FACFE"
+            android:pathData="M 66,58 L 78,58 L 92,80 L 80,80 L 88,98 L 64,74 L 76,74 Z" />
+
+        <!-- Glowing Core -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 64,64 m -3,0 a 3,3 0 1,1 6,0 a 3,3 0 1,1 -6,0" />
+    </group>
+</vector>

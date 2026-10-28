@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+    <rect width="128" height="128" rx="28" fill="#0A0F1D"/>
+    <!-- Outer Signal Arc Right -->
+    <path stroke="#00F2FE" stroke-opacity="0.2" stroke-width="3.5" stroke-linecap="round" fill="none" d="M 96,38 A 42,42 0 0,1 96,90" />
+    <!-- Outer Signal Arc Left -->
+    <path stroke="#00F2FE" stroke-opacity="0.2" stroke-width="3.5" stroke-linecap="round" fill="none" d="M 32,38 A 42,42 0 0,0 32,90" />
+    <!-- Inner Signal Arc Right -->
+    <path stroke="#00F2FE" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" fill="none" d="M 88,46 A 30,30 0 0,1 88,82" />
+    <!-- Inner Signal Arc Left -->
+    <path stroke="#00F2FE" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" fill="none" d="M 40,46 A 30,30 0 0,0 40,82" />
+    <!-- Stylized Geometric "R" Spine -->
+    <path fill="#00F2FE" d="M 46,30 L 56,30 L 56,98 L 46,98 Z" />
+    <!-- Stylized "R" Top Loop -->
+    <path fill="#00C3FF" d="M 56,30 L 76,30 C 85,30 92,37 92,46 C 92,55 85,62 76,62 L 56,62 Z M 56,40 L 56,52 L 74,52 C 77.5,52 80.5,49 80.5,46 C 80.5,43 77.5,40 74,40 Z" />
+    <!-- Stylized "R" Downward Transfer Arrow / Lightning Leg -->
+    <path fill="#4FACFE" d="M 66,58 L 78,58 L 92,80 L 80,80 L 88,98 L 64,74 L 76,74 Z" />
+    <!-- Center Pulsing Core Dot -->
+    <circle cx="64" cy="64" r="3" fill="#FFFFFF" />
+</svg>
